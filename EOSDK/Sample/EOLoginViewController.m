@@ -28,12 +28,9 @@
 #pragma mark - actions
 
 - (void)loginAction:(UIButton *)sender {
-	NSDictionary *keysDictionary = [NSDictionary dictionaryWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"Keys" ofType:@"plist"] ];
-	NSString *clientId = keysDictionary[@"EOClientId"];
-	NSString *secret = keysDictionary[@"EOSecret"];
-	NSString *callbackURL = keysDictionary[@"EOCallbackURL"];
-	
-	NSAssert( clientId && secret && callbackURL , @"Provide clientId, secret and callback URL");
+	NSString *clientId = @"<YOUR_CLIENT_ID>";
+	NSString *secret = @"<YOUR_SECRET>";
+	NSString *callbackURL = @"<YOUR_CALLBACK_URL>";
 	
 	// Use your clientId, secret and callback URL here
 	[[EOAPIProvider providerWithClientId:clientId secret:secret] authorizeWithCallbackURL:callbackURL completion:^(NSError *error) {

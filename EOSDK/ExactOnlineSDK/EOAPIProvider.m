@@ -136,10 +136,12 @@ static NSMutableDictionary *providersDictionary = nil;
 	// store credentials
 	if (credentials && !error) {
 		[AFOAuthCredential storeCredential:credentials withIdentifier:self.clientId];
+		self.credential = credentials;
 	} else {
 		[AFOAuthCredential deleteCredentialWithIdentifier:self.clientId];
+		self.credential = nil;
 	}
-	self.credential = credentials;
+	
 	
 	// call completion
 	if (self.authorizationCompletion) {
@@ -158,9 +160,10 @@ static NSMutableDictionary *providersDictionary = nil;
 		[viewController dismissViewControllerAnimated:YES completion:nil];
 	}
 	
-	if (!error) {
+	if (!error && response) {
 		[self oauthGetTokenWithCode:[response[@"code"] stringByRemovingPercentEncoding] callbackURL:viewController.redirectURL];
 	} else {
+		error = error ?: [NSError errorWithDomain:EOAPIProviderErrorDomain code:EOAPIProviderAuthorizationBadParams userInfo:nil];
 		[self completeAuthorizationWithCredentials:nil error:error];
 	}
 }

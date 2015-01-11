@@ -15,7 +15,6 @@
 		52313C231A6159B10084B87D /* EOJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52313C221A6159B10084B87D /* EOJSONResponseSerializer.m */; };
 		52313C291A617D7F0084B87D /* EOLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52313C271A617D7F0084B87D /* EOLoginViewController.m */; };
 		52313C2A1A617D7F0084B87D /* EOLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52313C281A617D7F0084B87D /* EOLoginViewController.xib */; };
-		52313C2E1A6181850084B87D /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52313C2D1A6181850084B87D /* Keys.plist */; };
 		52313C311A6183010084B87D /* EOGLAccountsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52313C301A6183010084B87D /* EOGLAccountsTableViewController.m */; };
 		527DB7FD1A5BF98400F8BC59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB7FC1A5BF98400F8BC59 /* main.m */; };
 		527DB8001A5BF98400F8BC59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB7FF1A5BF98400F8BC59 /* AppDelegate.m */; };
@@ -52,7 +51,6 @@
 		52313C261A617D7F0084B87D /* EOLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOLoginViewController.h; sourceTree = "<group>"; };
 		52313C271A617D7F0084B87D /* EOLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOLoginViewController.m; sourceTree = "<group>"; };
 		52313C281A617D7F0084B87D /* EOLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EOLoginViewController.xib; sourceTree = "<group>"; };
-		52313C2D1A6181850084B87D /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		52313C2F1A6183010084B87D /* EOGLAccountsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOGLAccountsTableViewController.h; sourceTree = "<group>"; };
 		52313C301A6183010084B87D /* EOGLAccountsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOGLAccountsTableViewController.m; sourceTree = "<group>"; };
 		527DB7F71A5BF98400F8BC59 /* EOSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EOSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,7 +176,6 @@
 		527DB7FA1A5BF98400F8BC59 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				52313C2D1A6181850084B87D /* Keys.plist */,
 				527DB7FB1A5BF98400F8BC59 /* Info.plist */,
 				527DB7FC1A5BF98400F8BC59 /* main.m */,
 			);
@@ -306,7 +303,6 @@
 				527DB80B1A5BF98400F8BC59 /* LaunchScreen.xib in Resources */,
 				52313C2A1A617D7F0084B87D /* EOLoginViewController.xib in Resources */,
 				527DB8081A5BF98400F8BC59 /* Images.xcassets in Resources */,
-				52313C2E1A6181850084B87D /* Keys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

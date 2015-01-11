@@ -33,6 +33,7 @@ extern NSString *const EOAPIErrorDomain;
 
 typedef NS_ENUM(NSInteger, EOAPIProviderError) {
 	EOAPIProviderAuthorizationCancelled = 1,		// User cancelled authorization
+	EOAPIProviderAuthorizationBadParams	= 2
 };
 
 
