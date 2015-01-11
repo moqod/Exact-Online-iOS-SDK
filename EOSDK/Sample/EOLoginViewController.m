@@ -28,6 +28,9 @@
 #pragma mark - actions
 
 - (void)loginAction:(UIButton *)sender {
+
+#warning Set your Exact credentials below
+    
 	NSString *clientId = @"<YOUR_CLIENT_ID>";
 	NSString *secret = @"<YOUR_SECRET>";
 	NSString *callbackURL = @"<YOUR_CALLBACK_URL>";
