@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52313C141A614C870084B87D /* EOAuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52313C111A614C870084B87D /* EOAuthorizationViewController.m */; };
+		52313C151A614C870084B87D /* EOAuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52313C121A614C870084B87D /* EOAuthorizationViewController.xib */; };
+		52313C191A614DA20084B87D /* EORequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 52313C181A614DA20084B87D /* EORequestInfo.m */; };
+		52313C1C1A614DC70084B87D /* EORESTRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 52313C1B1A614DC70084B87D /* EORESTRequestInfo.m */; };
+		52313C1F1A614E940084B87D /* EOXMLRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 52313C1E1A614E940084B87D /* EOXMLRequestInfo.m */; };
+		52313C231A6159B10084B87D /* EOJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52313C221A6159B10084B87D /* EOJSONResponseSerializer.m */; };
+		52313C291A617D7F0084B87D /* EOLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52313C271A617D7F0084B87D /* EOLoginViewController.m */; };
+		52313C2A1A617D7F0084B87D /* EOLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52313C281A617D7F0084B87D /* EOLoginViewController.xib */; };
+		52313C2E1A6181850084B87D /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52313C2D1A6181850084B87D /* Keys.plist */; };
+		52313C311A6183010084B87D /* EOGLAccountsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52313C301A6183010084B87D /* EOGLAccountsTableViewController.m */; };
+		527DB7FD1A5BF98400F8BC59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB7FC1A5BF98400F8BC59 /* main.m */; };
+		527DB8001A5BF98400F8BC59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB7FF1A5BF98400F8BC59 /* AppDelegate.m */; };
+		527DB8081A5BF98400F8BC59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527DB8071A5BF98400F8BC59 /* Images.xcassets */; };
+		527DB80B1A5BF98400F8BC59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527DB8091A5BF98400F8BC59 /* LaunchScreen.xib */; };
+		527DB8361A5BF9E400F8BC59 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB8241A5BF9E400F8BC59 /* AFHTTPRequestOperation.m */; };
+		527DB8371A5BF9E400F8BC59 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB8261A5BF9E400F8BC59 /* AFHTTPRequestOperationManager.m */; };
+		527DB8381A5BF9E400F8BC59 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB8281A5BF9E400F8BC59 /* AFHTTPSessionManager.m */; };
+		527DB8391A5BF9E400F8BC59 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB82B1A5BF9E400F8BC59 /* AFNetworkReachabilityManager.m */; };
+		527DB83A1A5BF9E400F8BC59 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB82D1A5BF9E400F8BC59 /* AFSecurityPolicy.m */; };
+		527DB83B1A5BF9E400F8BC59 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB82F1A5BF9E400F8BC59 /* AFURLConnectionOperation.m */; };
+		527DB83C1A5BF9E400F8BC59 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB8311A5BF9E400F8BC59 /* AFURLRequestSerialization.m */; };
+		527DB83D1A5BF9E400F8BC59 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB8331A5BF9E400F8BC59 /* AFURLResponseSerialization.m */; };
+		527DB83E1A5BF9E400F8BC59 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB8351A5BF9E400F8BC59 /* AFURLSessionManager.m */; };
+		527DB8411A5BFA5A00F8BC59 /* EOAPIProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB8401A5BFA5A00F8BC59 /* EOAPIProvider.m */; };
+		527DB8481A5BFE4100F8BC59 /* AFHTTPRequestSerializer+OAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB8451A5BFE4100F8BC59 /* AFHTTPRequestSerializer+OAuth2.m */; };
+		527DB8491A5BFE4100F8BC59 /* AFOAuth2Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DB8471A5BFE4100F8BC59 /* AFOAuth2Manager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52313C0C1A61242D0084B87D /* EOAPIProviderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOAPIProviderDelegate.h; sourceTree = "<group>"; };
+		52313C101A614C870084B87D /* EOAuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOAuthorizationViewController.h; sourceTree = "<group>"; };
+		52313C111A614C870084B87D /* EOAuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOAuthorizationViewController.m; sourceTree = "<group>"; };
+		52313C121A614C870084B87D /* EOAuthorizationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EOAuthorizationViewController.xib; sourceTree = "<group>"; };
+		52313C171A614DA20084B87D /* EORequestInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EORequestInfo.h; sourceTree = "<group>"; };
+		52313C181A614DA20084B87D /* EORequestInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EORequestInfo.m; sourceTree = "<group>"; };
+		52313C1A1A614DC70084B87D /* EORESTRequestInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EORESTRequestInfo.h; sourceTree = "<group>"; };
+		52313C1B1A614DC70084B87D /* EORESTRequestInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EORESTRequestInfo.m; sourceTree = "<group>"; };
+		52313C1D1A614E940084B87D /* EOXMLRequestInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOXMLRequestInfo.h; sourceTree = "<group>"; };
+		52313C1E1A614E940084B87D /* EOXMLRequestInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOXMLRequestInfo.m; sourceTree = "<group>"; };
+		52313C211A6159B10084B87D /* EOJSONResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOJSONResponseSerializer.h; sourceTree = "<group>"; };
+		52313C221A6159B10084B87D /* EOJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOJSONResponseSerializer.m; sourceTree = "<group>"; };
+		52313C241A615E6B0084B87D /* EOAPIConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOAPIConstants.h; sourceTree = "<group>"; };
+		52313C261A617D7F0084B87D /* EOLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOLoginViewController.h; sourceTree = "<group>"; };
+		52313C271A617D7F0084B87D /* EOLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOLoginViewController.m; sourceTree = "<group>"; };
+		52313C281A617D7F0084B87D /* EOLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EOLoginViewController.xib; sourceTree = "<group>"; };
+		52313C2D1A6181850084B87D /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		52313C2F1A6183010084B87D /* EOGLAccountsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOGLAccountsTableViewController.h; sourceTree = "<group>"; };
+		52313C301A6183010084B87D /* EOGLAccountsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOGLAccountsTableViewController.m; sourceTree = "<group>"; };
+		527DB7F71A5BF98400F8BC59 /* EOSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EOSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		527DB7FB1A5BF98400F8BC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		527DB7FC1A5BF98400F8BC59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		527DB7FE1A5BF98400F8BC59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		527DB7FF1A5BF98400F8BC59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		527DB8071A5BF98400F8BC59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		527DB80A1A5BF98400F8BC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		527DB8231A5BF9E400F8BC59 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		527DB8241A5BF9E400F8BC59 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		527DB8251A5BF9E400F8BC59 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		527DB8261A5BF9E400F8BC59 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		527DB8271A5BF9E400F8BC59 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		527DB8281A5BF9E400F8BC59 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		527DB8291A5BF9E400F8BC59 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		527DB82A1A5BF9E400F8BC59 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		527DB82B1A5BF9E400F8BC59 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		527DB82C1A5BF9E400F8BC59 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		527DB82D1A5BF9E400F8BC59 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		527DB82E1A5BF9E400F8BC59 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		527DB82F1A5BF9E400F8BC59 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		527DB8301A5BF9E400F8BC59 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		527DB8311A5BF9E400F8BC59 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		527DB8321A5BF9E400F8BC59 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		527DB8331A5BF9E400F8BC59 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		527DB8341A5BF9E400F8BC59 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		527DB8351A5BF9E400F8BC59 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		527DB83F1A5BFA5A00F8BC59 /* EOAPIProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOAPIProvider.h; sourceTree = "<group>"; };
+		527DB8401A5BFA5A00F8BC59 /* EOAPIProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOAPIProvider.m; sourceTree = "<group>"; };
+		527DB8441A5BFE4100F8BC59 /* AFHTTPRequestSerializer+OAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestSerializer+OAuth2.h"; sourceTree = "<group>"; };
+		527DB8451A5BFE4100F8BC59 /* AFHTTPRequestSerializer+OAuth2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestSerializer+OAuth2.m"; sourceTree = "<group>"; };
+		527DB8461A5BFE4100F8BC59 /* AFOAuth2Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOAuth2Manager.h; sourceTree = "<group>"; };
+		527DB8471A5BFE4100F8BC59 /* AFOAuth2Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOAuth2Manager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		527DB7F41A5BF98400F8BC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52313C0F1A614C870084B87D /* EOAuthorizationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				52313C101A614C870084B87D /* EOAuthorizationViewController.h */,
+				52313C111A614C870084B87D /* EOAuthorizationViewController.m */,
+				52313C121A614C870084B87D /* EOAuthorizationViewController.xib */,
+			);
+			path = EOAuthorizationViewController;
+			sourceTree = "<group>";
+		};
+		52313C161A614D950084B87D /* EORequestInfo */ = {
+			isa = PBXGroup;
+			children = (
+				52313C171A614DA20084B87D /* EORequestInfo.h */,
+				52313C181A614DA20084B87D /* EORequestInfo.m */,
+				52313C1A1A614DC70084B87D /* EORESTRequestInfo.h */,
+				52313C1B1A614DC70084B87D /* EORESTRequestInfo.m */,
+				52313C1D1A614E940084B87D /* EOXMLRequestInfo.h */,
+				52313C1E1A614E940084B87D /* EOXMLRequestInfo.m */,
+			);
+			path = EORequestInfo;
+			sourceTree = "<group>";
+		};
+		52313C201A61599A0084B87D /* EOResponseSerializers */ = {
+			isa = PBXGroup;
+			children = (
+				52313C211A6159B10084B87D /* EOJSONResponseSerializer.h */,
+				52313C221A6159B10084B87D /* EOJSONResponseSerializer.m */,
+			);
+			path = EOResponseSerializers;
+			sourceTree = "<group>";
+		};
+		52313C251A617CDF0084B87D /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				52313C261A617D7F0084B87D /* EOLoginViewController.h */,
+				52313C271A617D7F0084B87D /* EOLoginViewController.m */,
+				52313C281A617D7F0084B87D /* EOLoginViewController.xib */,
+				52313C2F1A6183010084B87D /* EOGLAccountsTableViewController.h */,
+				52313C301A6183010084B87D /* EOGLAccountsTableViewController.m */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		527DB7EE1A5BF98400F8BC59 = {
+			isa = PBXGroup;
+			children = (
+				527DB7F91A5BF98400F8BC59 /* EOSDK */,
+				527DB7F81A5BF98400F8BC59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		527DB7F81A5BF98400F8BC59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				527DB7F71A5BF98400F8BC59 /* EOSDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		527DB7F91A5BF98400F8BC59 /* EOSDK */ = {
+			isa = PBXGroup;
+			children = (
+				52313C251A617CDF0084B87D /* Sample */,
+				527DB8201A5BF9E400F8BC59 /* ExactOnlineSDK */,
+				527DB8211A5BF9E400F8BC59 /* libs */,
+				527DB7FE1A5BF98400F8BC59 /* AppDelegate.h */,
+				527DB7FF1A5BF98400F8BC59 /* AppDelegate.m */,
+				527DB8071A5BF98400F8BC59 /* Images.xcassets */,
+				527DB8091A5BF98400F8BC59 /* LaunchScreen.xib */,
+				527DB7FA1A5BF98400F8BC59 /* Supporting Files */,
+			);
+			path = EOSDK;
+			sourceTree = "<group>";
+		};
+		527DB7FA1A5BF98400F8BC59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52313C2D1A6181850084B87D /* Keys.plist */,
+				527DB7FB1A5BF98400F8BC59 /* Info.plist */,
+				527DB7FC1A5BF98400F8BC59 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		527DB8201A5BF9E400F8BC59 /* ExactOnlineSDK */ = {
+			isa = PBXGroup;
+			children = (
+				52313C201A61599A0084B87D /* EOResponseSerializers */,
+				52313C161A614D950084B87D /* EORequestInfo */,
+				52313C0F1A614C870084B87D /* EOAuthorizationViewController */,
+				527DB83F1A5BFA5A00F8BC59 /* EOAPIProvider.h */,
+				527DB8401A5BFA5A00F8BC59 /* EOAPIProvider.m */,
+				52313C0C1A61242D0084B87D /* EOAPIProviderDelegate.h */,
+				52313C241A615E6B0084B87D /* EOAPIConstants.h */,
+			);
+			path = ExactOnlineSDK;
+			sourceTree = "<group>";
+		};
+		527DB8211A5BF9E400F8BC59 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				527DB8431A5BFE4100F8BC59 /* AFOAuth2Manager */,
+				527DB8221A5BF9E400F8BC59 /* AFNetworking */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		527DB8221A5BF9E400F8BC59 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				527DB8231A5BF9E400F8BC59 /* AFHTTPRequestOperation.h */,
+				527DB8241A5BF9E400F8BC59 /* AFHTTPRequestOperation.m */,
+				527DB8251A5BF9E400F8BC59 /* AFHTTPRequestOperationManager.h */,
+				527DB8261A5BF9E400F8BC59 /* AFHTTPRequestOperationManager.m */,
+				527DB8271A5BF9E400F8BC59 /* AFHTTPSessionManager.h */,
+				527DB8281A5BF9E400F8BC59 /* AFHTTPSessionManager.m */,
+				527DB8291A5BF9E400F8BC59 /* AFNetworking.h */,
+				527DB82A1A5BF9E400F8BC59 /* AFNetworkReachabilityManager.h */,
+				527DB82B1A5BF9E400F8BC59 /* AFNetworkReachabilityManager.m */,
+				527DB82C1A5BF9E400F8BC59 /* AFSecurityPolicy.h */,
+				527DB82D1A5BF9E400F8BC59 /* AFSecurityPolicy.m */,
+				527DB82E1A5BF9E400F8BC59 /* AFURLConnectionOperation.h */,
+				527DB82F1A5BF9E400F8BC59 /* AFURLConnectionOperation.m */,
+				527DB8301A5BF9E400F8BC59 /* AFURLRequestSerialization.h */,
+				527DB8311A5BF9E400F8BC59 /* AFURLRequestSerialization.m */,
+				527DB8321A5BF9E400F8BC59 /* AFURLResponseSerialization.h */,
+				527DB8331A5BF9E400F8BC59 /* AFURLResponseSerialization.m */,
+				527DB8341A5BF9E400F8BC59 /* AFURLSessionManager.h */,
+				527DB8351A5BF9E400F8BC59 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		527DB8431A5BFE4100F8BC59 /* AFOAuth2Manager */ = {
+			isa = PBXGroup;
+			children = (
+				527DB8441A5BFE4100F8BC59 /* AFHTTPRequestSerializer+OAuth2.h */,
+				527DB8451A5BFE4100F8BC59 /* AFHTTPRequestSerializer+OAuth2.m */,
+				527DB8461A5BFE4100F8BC59 /* AFOAuth2Manager.h */,
+				527DB8471A5BFE4100F8BC59 /* AFOAuth2Manager.m */,
+			);
+			path = AFOAuth2Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		527DB7F61A5BF98400F8BC59 /* EOSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 527DB81A1A5BF98400F8BC59 /* Build configuration list for PBXNativeTarget "EOSDK" */;
+			buildPhases = (
+				527DB7F31A5BF98400F8BC59 /* Sources */,
+				527DB7F41A5BF98400F8BC59 /* Frameworks */,
+				527DB7F51A5BF98400F8BC59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EOSDK;
+			productName = EOSDK;
+			productReference = 527DB7F71A5BF98400F8BC59 /* EOSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		527DB7EF1A5BF98400F8BC59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Moqod;
+				TargetAttributes = {
+					527DB7F61A5BF98400F8BC59 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 527DB7F21A5BF98400F8BC59 /* Build configuration list for PBXProject "EOSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 527DB7EE1A5BF98400F8BC59;
+			productRefGroup = 527DB7F81A5BF98400F8BC59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				527DB7F61A5BF98400F8BC59 /* EOSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		527DB7F51A5BF98400F8BC59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52313C151A614C870084B87D /* EOAuthorizationViewController.xib in Resources */,
+				527DB80B1A5BF98400F8BC59 /* LaunchScreen.xib in Resources */,
+				52313C2A1A617D7F0084B87D /* EOLoginViewController.xib in Resources */,
+				527DB8081A5BF98400F8BC59 /* Images.xcassets in Resources */,
+				52313C2E1A6181850084B87D /* Keys.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		527DB7F31A5BF98400F8BC59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527DB8361A5BF9E400F8BC59 /* AFHTTPRequestOperation.m in Sources */,
+				527DB8491A5BFE4100F8BC59 /* AFOAuth2Manager.m in Sources */,
+				52313C291A617D7F0084B87D /* EOLoginViewController.m in Sources */,
+				527DB8411A5BFA5A00F8BC59 /* EOAPIProvider.m in Sources */,
+				52313C1F1A614E940084B87D /* EOXMLRequestInfo.m in Sources */,
+				52313C191A614DA20084B87D /* EORequestInfo.m in Sources */,
+				52313C1C1A614DC70084B87D /* EORESTRequestInfo.m in Sources */,
+				527DB8371A5BF9E400F8BC59 /* AFHTTPRequestOperationManager.m in Sources */,
+				527DB8391A5BF9E400F8BC59 /* AFNetworkReachabilityManager.m in Sources */,
+				52313C311A6183010084B87D /* EOGLAccountsTableViewController.m in Sources */,
+				527DB83D1A5BF9E400F8BC59 /* AFURLResponseSerialization.m in Sources */,
+				527DB83B1A5BF9E400F8BC59 /* AFURLConnectionOperation.m in Sources */,
+				527DB83A1A5BF9E400F8BC59 /* AFSecurityPolicy.m in Sources */,
+				527DB8481A5BFE4100F8BC59 /* AFHTTPRequestSerializer+OAuth2.m in Sources */,
+				527DB8381A5BF9E400F8BC59 /* AFHTTPSessionManager.m in Sources */,
+				527DB83C1A5BF9E400F8BC59 /* AFURLRequestSerialization.m in Sources */,
+				527DB83E1A5BF9E400F8BC59 /* AFURLSessionManager.m in Sources */,
+				527DB8001A5BF98400F8BC59 /* AppDelegate.m in Sources */,
+				52313C231A6159B10084B87D /* EOJSONResponseSerializer.m in Sources */,
+				52313C141A614C870084B87D /* EOAuthorizationViewController.m in Sources */,
+				527DB7FD1A5BF98400F8BC59 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		527DB8091A5BF98400F8BC59 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				527DB80A1A5BF98400F8BC59 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		527DB8181A5BF98400F8BC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		527DB8191A5BF98400F8BC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		527DB81B1A5BF98400F8BC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EOSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		527DB81C1A5BF98400F8BC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EOSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		527DB7F21A5BF98400F8BC59 /* Build configuration list for PBXProject "EOSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527DB8181A5BF98400F8BC59 /* Debug */,
+				527DB8191A5BF98400F8BC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		527DB81A1A5BF98400F8BC59 /* Build configuration list for PBXNativeTarget "EOSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527DB81B1A5BF98400F8BC59 /* Debug */,
+				527DB81C1A5BF98400F8BC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 527DB7EF1A5BF98400F8BC59 /* Project object */;
+}
