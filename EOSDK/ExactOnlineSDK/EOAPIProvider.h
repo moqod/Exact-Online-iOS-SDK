@@ -25,13 +25,18 @@
 // nil until manual setup or 'current/Me' API method response
 @property (nonatomic, strong) NSString				*currentDivision;
 
+// Returns access token (if exists).
 @property (nonatomic, readonly) NSString			*accessToken;
 
 @property (nonatomic, assign) id <EOAPIProviderDelegate>delegate;
 
 + (instancetype)providerWithClientId:(NSString *)clientId secret:(NSString *)secret;
+
+// Returns any provider. This method makes sense when you work with one provider only.
+// See implementation for further details.
 + (instancetype)anyProvider;
 
+// Designated initializer.
 - (instancetype)initWithClientId:(NSString *)clientId secret:(NSString *)secret;
 
 // Authorization
@@ -42,10 +47,13 @@
 - (void)logout;
 
 // API
-
 // GET requests
+// Uses 'currentDivision' as division
 - (NSOperation *)restGetAPI:(NSString *)apiName completion:(EOAPICompletion)completion;
+
+// Uses 'currentDivision' as division
 - (NSOperation *)restGetAPI:(NSString *)apiName odataParams:(NSDictionary *)odataParams completion:(EOAPICompletion)completion;
+
 - (NSOperation *)restGetAPI:(NSString *)apiName division:(NSString *)division odataParams:(NSDictionary *)odataParams completion:(EOAPICompletion)completion;
 - (NSOperation *)restGetAPI:(NSString *)apiName division:(NSString *)division odataParams:(NSDictionary *)odataParams grabAllItems:(BOOL)grabAllItems completion:(EOAPICompletion)completion;
 
