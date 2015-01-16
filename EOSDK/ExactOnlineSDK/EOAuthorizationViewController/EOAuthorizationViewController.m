@@ -78,11 +78,6 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
 	[self.activityIndicatorView stopAnimating];
 	[self.activityIndicatorView removeFromSuperview];
-	
-#ifdef DEBUG
-	[self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.getElementById('%@').value = '%@'", @"UserNameField", @"cashboard"]];
-	[self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.getElementById('%@').value = '%@'", @"PasswordField", @"Cashboardisleuk"]];
-#endif
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
